@@ -8,7 +8,7 @@ const Header = () => {
   };
 
   return (
-    <header className="z-10 top-0 bg-blue-500 sticky text-white py-4 shadow-lg">
+    <header className="z-10 top-0 bg-slate-500 sticky text-white py-4 shadow-lg">
       <nav className="container mx-auto flex justify-between items-center px-4 md:px-8">
         {/* Logo */}
         <div className="text-3xl font-bold">

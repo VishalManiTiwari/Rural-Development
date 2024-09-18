@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import VirtualTour from './pages/VirtualTour';
 import Cultural from './pages/Cultural';
 import Mountains from './pages/Mountains';
+import Pilgrimage from './pages/Pilgrimage';
+import Contact from './components/Contact';
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/mountains" element={<Mountains />} />
         <Route path="/VirtualTour" element={<VirtualTour />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/pilgrimage" element={<Pilgrimage />} />
         <Route path="/cultural" element={<Cultural />} />
       </Routes>
       <Footer />

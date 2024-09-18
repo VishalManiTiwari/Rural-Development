@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Cultural from "./Cultural";
 import Farming from "./Farming";
 import Mountains from "./Mountains";
-const Pilgrims = () => <div className="p-4 bg-green-100 rounded-lg">Pilgrims places information</div>;
+import Pilgrimage from "./Pilgrimage";
+
 
 const FeaturedArea = () => {
   // Set "Cultural" as the default selected category
@@ -14,8 +15,8 @@ const FeaturedArea = () => {
         return <Cultural />;
       case "Mountains":
         return <Mountains />;
-      case "Pilgrim":
-        return <Pilgrims />;
+      case "Pilgrimage":
+        return <Pilgrimage />; 
       case "Farming":
         return <Farming />;
       default:
@@ -36,7 +37,7 @@ const FeaturedArea = () => {
           <li className="relative group cursor-pointer">
             <button
               onClick={() => setSelectedCategory("Cultural")}
-              className="block text-lg font-semibold text-gray-700 bg-white py-4 px-6 rounded-lg shadow-lg hover:bg-green-500 hover:text-white transition duration-300"
+              className="block text-lg font-semibold text-gray-700 bg-white py-4 px-6 rounded-lg shadow-lg hover:bg-orange-500 hover:text-white transition duration-300"
             >
               Cultural
             </button>
@@ -44,15 +45,15 @@ const FeaturedArea = () => {
           <li className="relative group cursor-pointer">
             <button
               onClick={() => setSelectedCategory("Mountains")}
-              className="block text-lg font-semibold text-gray-700 bg-white py-4 px-6 rounded-lg shadow-lg hover:bg-green-500 hover:text-white transition duration-300"
+              className="block text-lg font-semibold text-gray-700 bg-white py-4 px-6 rounded-lg shadow-lg hover:bg-orange-500 hover:text-white transition duration-300"
             >
               Mountains
             </button>
           </li>
           <li className="relative group cursor-pointer">
             <button
-              onClick={() => setSelectedCategory("Pilgrims")}
-              className="block text-lg font-semibold text-gray-700 bg-white py-4 px-6 rounded-lg shadow-lg hover:bg-green-500 hover:text-white transition duration-300"
+              onClick={() => setSelectedCategory("Pilgrimage")} // Updated to "Pilgrimage"
+              className="block text-lg font-semibold text-gray-700 bg-white py-4 px-6 rounded-lg shadow-lg hover:bg-orange-500 hover:text-white transition duration-300"
             >
               Pilgrimage Sites
             </button>
@@ -60,7 +61,7 @@ const FeaturedArea = () => {
           <li className="relative group cursor-pointer">
             <button
               onClick={() => setSelectedCategory("Farming")}
-              className="block text-lg font-semibold text-gray-700 bg-white py-4 px-6 rounded-lg shadow-lg hover:bg-green-500 hover:text-white transition duration-300"
+              className="block text-lg font-semibold text-gray-700 bg-white py-4 px-6 rounded-lg shadow-lg hover:bg-orange-500 hover:text-white transition duration-300"
             >
               Farming
             </button>
@@ -68,9 +69,7 @@ const FeaturedArea = () => {
         </ul>
 
         {/* Render Selected Category */}
-        <div className="mt-8">
-          {renderSelectedComponent()}
-        </div>
+        <div className="mt-8">{renderSelectedComponent()}</div>
       </section>
     </div>
   );

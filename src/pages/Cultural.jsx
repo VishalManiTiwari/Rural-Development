@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Cultural = () => {
   return (
@@ -30,8 +30,8 @@ const Cultural = () => {
           <div className="p-4">
             <h3 className="text-2xl font-bold mb-2">Traditional Festivals</h3>
             <p className="text-gray-600">
-              Experience the vibrant colors and customs of our cultural festivals,
-              filled with music, dance, and celebration.
+              Experience the vibrant colors and customs of our cultural
+              festivals, filled with music, dance, and celebration.
             </p>
           </div>
         </div>
@@ -44,10 +44,12 @@ const Cultural = () => {
             className="w-full h-56 object-cover"
           />
           <div className="p-4">
-            <h3 className="text-2xl font-bold mb-2">Local Art and Handicrafts</h3>
+            <h3 className="text-2xl font-bold mb-2">
+              Local Art and Handicrafts
+            </h3>
             <p className="text-gray-600">
-              Discover the intricate craftsmanship of local artisans, from pottery to
-              handwoven textiles, each piece tells a unique story.
+              Discover the intricate craftsmanship of local artisans, from
+              pottery to handwoven textiles, each piece tells a unique story.
             </p>
           </div>
         </div>
@@ -62,9 +64,10 @@ const Cultural = () => {
           <div className="p-4">
             <h3 className="text-2xl font-bold mb-2">Cultural Cuisine</h3>
             <p className="text-gray-600">
-              Savor the flavors of traditional dishes made from local ingredients,
-              offering a true taste of our culture.
+              Savor the flavors of traditional dishes made from local
+              ingredients, offering a true taste of our culture.
             </p>
+            
           </div>
         </div>
 
@@ -76,10 +79,12 @@ const Cultural = () => {
             className="w-full h-56 object-cover"
           />
           <div className="p-4">
-            <h3 className="text-2xl font-bold mb-2">Cultural Dance and Music</h3>
+            <h3 className="text-2xl font-bold mb-2">
+              Cultural Dance and Music
+            </h3>
             <p className="text-gray-600">
-              Enjoy performances of traditional dance and music, passed down through
-              generations, reflecting the soul of our community.
+              Enjoy performances of traditional dance and music, passed down
+              through generations, reflecting the soul of our community.
             </p>
           </div>
         </div>
